@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = `mongodb+srv://khalil:khalil@cluster0.bi3v4gp.mongodb.net/ProductPedia`;
+const url = `mongodb+srv://aqibqazidb:QE_productPedia@cluster0.canrteb.mongodb.net/productPedia?retryWrites=true&w=majority`;
 
 const connectionParams = {
   useNewUrlParser: true,

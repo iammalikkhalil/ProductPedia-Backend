@@ -9,12 +9,12 @@ const productSchema = new mongoose.Schema(
       type: String,
       require: true,
     },
-    categoryId: {
+    subCategory: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "category",
+      ref: "subCategory",
       required: true,
     },
-    companyId: {
+    company: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "company",
       required: true,

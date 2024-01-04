@@ -1,5 +1,5 @@
 require("./database/dbconnection");
-const express = require('express');
+const express = require("express");
 const path = require("path");
 const app = express();
 app.use(express.json());
@@ -16,6 +16,9 @@ app.use("/product", productRoutes);
 
 const categoryRoutes = require("./routes/CategoryRoutes");
 app.use("/category", categoryRoutes);
+
+const subCategoryRoutes = require("./routes/SubCategoryRoutes");
+app.use("/subcategory", subCategoryRoutes);
 
 const companyRoutes = require("./routes/CompanyRoutes");
 app.use("/company", companyRoutes);
